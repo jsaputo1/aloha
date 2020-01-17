@@ -1,62 +1,247 @@
 /* Nav = #e2574c, uppercase
+Raleway Light
 
-New collection = white, upper case
-Spring/Summer 20/20, white
+hero-banner
+P New collection = white, upper case, Raleway Light
+H2 Spring/Summer 20/20, white, Playfair Display
 
-Hand crafted styles = #2d2d2d,
-Paragraph below = #2d2d2d
-
-Grid = white, uppercase
-
-Most loved products = #2d2d2d,
-
-Dresses = #969696
-Description of product #e2574c
-Price = #969696
+about
+class="playfair-bold" Hand crafted class="playfair-italic" styles = #2d2d2d, Playfair Display
+p
+Paragraph below = #2d2d2d, Raleway Light
 
 
-Sign up for updates = white
-Paragraph below = white, 
+shop-grid 
+Grid = white, uppercase, Raleway Light
 
+Most loved products = #2d2d2d, Playfair Display
 
+featured
+p Category = #969696, Raleway Light
+h3 Description of product #e2574c, Playfair Display
+p Price = #969696, Raleway Light
+
+updates
+h2 Sign up for updates = white, Playfair Display
+p Paragraph below = white, Raleway Light
+
+Subscribe button = #e2574c, Raleway Light
+Subscribe font = white, Raleway Light
+Your email = #969696, Raleway Light
+
+All footer font = Playfair Display
+p
 Footer copyright = white,
 Footer address = #969696
 Footer background = #242424
 
-Subscribe button = #e2574c
-Subscribe font = white
-Your email = #969696 
+social-media
+white
+Social media font = Raleway Light
 
 link hover state colour is #b64036
 
-ypography:
-
-    The base font size is 16px for all screen width 600px and up (the mobile base font size is 14px)
-    The body font family is Raleway Light
-    The headings font family is Playfair Display
-
 */
+
+/* Typography */
+
+@font-face {
+  font-family: 'Raleway Light';
+  src: url('../fonts/Raleway-Light.eot');
+  src: url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Raleway-Light.woff2') format('woff2'),
+      url('../fonts/Raleway-Light.woff') format('woff'),
+      url('../fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Light Italic';
+  src: url('../fonts/Raleway-LightItalic.eot');
+  src: url('../fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Raleway-LightItalic.woff2') format('woff2'),
+      url('../fonts/Raleway-LightItalic.woff') format('woff'),
+      url('../fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway Medium Italic';
+  src: url('../fonts/Raleway-MediumItalic.eot');
+  src: url('../fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Raleway-MediumItalic.woff2') format('woff2'),
+      url('../fonts/Raleway-MediumItalic.woff') format('woff'),
+      url('../fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway Medium';
+  src: url('../fonts/Raleway-Medium.eot');
+  src: url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Raleway-Medium.woff2') format('woff2'),
+      url('../fonts/Raleway-Medium.woff') format('woff'),
+      url('../fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display Bold';
+  src: url('../fonts/PlayfairDisplay-Bold.eot');
+  src: url('../fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+      url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+      url('../fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display Bold Italic';
+  src: url('../fonts/PlayfairDisplay-BoldItalic.eot');
+  src: url('../fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+      url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+      url('../fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display Italic';
+  src: url('../fonts/PlayfairDisplay-Italic.eot');
+  src: url('../fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+      url('../fonts/PlayfairDisplay-Italic.woff') format('woff'),
+      url('../fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display Regular';
+  src: url('../fonts/PlayfairDisplay-Regular.eot');
+  src: url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+      url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+      url('../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.playfair-bold {
+  font-family: 'Playfair Display Bold';
+
+}
+
+.playfair-italic {
+    font-family: 'Playfair Display Italic';
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Playfair Display';
+}
+
+nav a {
+  color: #e2574c;
+  text-decoration: none;
+  font-family: 'Raleway Light';
+}
+
+.hero-banner p {
+  width: 100%;
+  height: vh;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Raleway Light';
+}
+
+.hero-banner h2 {
+  text-align: center;
+  font-family: 'Playfair Display';
+}
+
+.about {
+  color:#2d2d2d
+}
+
+.about p {
+  color: #2d2d2d;
+  text-align: center;
+  font-family: 'Raleway Light';
+}
+
+.featured {
+  color: #2d2d2d;
+}
+
+.featured p {
+  color: #969696;
+  font-family: 'Raleway Light';
+}
+
+.featured h3 {
+  color: #e2574c;
+  font-family: 'Playfair Display';
+}
+
+.updates {
+  color: white;
+}
+
+.updates p {
+  color: white;
+  font-family: 'Raleway Light';
+}
+
+
+.contact-info p {
+color: white;
+font-family: 'Playfair Display';
+}
+
+.contact-info a {
+  color: white;
+  font-family: 'Playfair Display';
+
+}
+
+.social-media {
+  color: white;
+  font-family: 'Raleway Light';
+}
+  
+
+a:hover {
+  color: #b64036;
+}
+
+/* Elements */
 
 body {
   background-color: white;
   margin: 0 auto;
   font-size: 16px;
+  font-family: 'Raleway Light';
 }
 
 .container {
   width: 1240px;
 }
+/* Header */
+
+header {
+  
+}
 
 /* Nav */
 
-nav a {
-  color: #e2574c;
-  text-decoration: none;
-}
 
-.nav-links a:hover {
-  color: #b64036;
-}
 
 /* Main */
 
@@ -71,28 +256,10 @@ nav a {
   background-size: cover, contain, cover;
 }
 
-.hero-banner p {
-  width: 100%;
-  height: vh;
-  text-transform: uppercase;
-  text-align: center;
-}
 
-.hero-banner h2 {
-  text-align: center;
-}
 
 /* About */
 
-.about h2 {
-  color: #2d2d2d;
-  text-align: center;
-}
-
-.about p {
-  color: #2d2d2d;
-  text-align: center;
-}
 
 /* Shop Grid */
 
@@ -151,17 +318,6 @@ nav a {
 
 /* Featured */
 
-.featured h2 {
-  color: #2d2d2d;
-}
-
-.featured p {
-  color: #969696;
-}
-
-.featured h3 {
-  color: #e2574c;
-}
 
 .featured button {
   background: black;
@@ -174,38 +330,48 @@ nav a {
   height: 200px;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
-.updates h2 {
-  color: white;
-}
-
-.updates p {
-  color: white;
-}
-
-.updates form {
-  color: white;
-}
 
 /* Footer */
+
 
 footer {
   background-color: #242424;
   width: 100%;
-  color: white;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* 
+.contact-info {
+  /* display: flex;
+  align-self: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 30%; */
+}
 
-Sign up for updates = white
-Paragraph below = white, 
+.social-media {
+  /* display: flex;
+  align-self: center;
+  justify-content: flex-end; */
+}
 
+/* display: flex = sets flexbox
+flex-direction: column = Changes to columns. Default is set to row
+flex-direction: column-reverse, flex-direction: row-reverse; = reverses order
+flex-wrap: wrap = does a wrap (like word wrap)
+flow-flow: row-reverse wrap; = shorthand, combines flow and wrap.
+justify-content:space-between = this will evenly distribute space between boxes
+justify-content:space-around; = gives margins at the sides
+justify-content:space-evenly;
+justify-content:space-flexend; = moves to the end (horizantal)
+justify-content:space-center; = centers horizontally
+align-items:flexend = moves to the end (bottom, veritcal) */
 
-Footer copyright = white,
-Footer address = #969696
-Footer background = 
-
-Subscribe button = #e2574c
-Subscribe font = white
-Your email = #969696  */
+@media screen and (min-width: 600px) {
+}
