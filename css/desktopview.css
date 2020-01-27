@@ -1,0 +1,29 @@
+@media screen and (min-width: 1240px) {
+
+  /* Flickity Styling */
+  .carousel-cell {
+    width: 25%;
+  }
+
+  .updates {
+    background-size: 100%;
+}
+
+/* Shop Grid */
+
+.bags {
+background-position: bottom;
+}
+
+  /* Footer */
+
+.footer-information {
+  padding-left: 50px;
+}
+
+.social-media li {
+  padding-right: 100px;
+}
+
+}
+
