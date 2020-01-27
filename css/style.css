@@ -125,7 +125,6 @@ header a {
 }
 
 header h1 {
-
   color: #e2574c;
   font-family: "Raleway Medium";
   font-size: 0.8em;
@@ -276,7 +275,6 @@ header {
   align-items: center;
   background-color: white;
   padding-bottom: 20px;
-
 }
 
 .sticky {
@@ -284,7 +282,6 @@ header {
   top: 0;
   width: 100%;
   padding-top: 10px;
-
 }
 
 /* Left logo  */
