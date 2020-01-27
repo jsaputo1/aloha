@@ -16,9 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   
     //End of Flickity
-  
-  
-  
+    
   //Subscribe button
   
   document.getElementById("submit-button")
@@ -38,21 +36,45 @@ document.addEventListener("DOMContentLoaded", function() {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   }
-  
- 
+   
 
   //Add to cart 
 
-  
+  let cartText = document.getElementById("cartCount");
   let button = document.getElementById("cart-button"),
   count = 0;
 button.onclick = function() {
-  count +- 1;
-  console.log(count)
+  count ++;
+    cartText.innerHTML = "Items: " + count;
+    console.log(count)
 };
 
 // End of add to cart
   
+// Stick Header
+window.onscroll = function() {myFunction()};
+
+const header = document.getElementById("myHeader");
+
+const sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+} 
+
+// End of Sticky Header
+
+// Smooth Scrolling
+
+window.scroll({
+  top: 2500, 
+  left: 0, 
+  behavior: 'smooth'
+});
       
   });
 
