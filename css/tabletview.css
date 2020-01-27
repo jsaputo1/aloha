@@ -1,4 +1,9 @@
 @media screen and (min-width: 600px) {
+  /* Text Size Increase */
+  body {
+    font-size: 20px;
+  }
+
   /* Hide/Unhide */
 
   .social-media-text {
@@ -11,10 +16,10 @@
 
   /* Header */
 
-  .full-nav {
+ header {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
+    padding: 5px 16px 10px 5px;
   }
 
   /* Left logo  */
@@ -23,6 +28,10 @@
     display: flex;
     order: 1;
     width: 50%;
+  }
+
+  .left-logo img {
+    width: 70%;
   }
 
   /* Right logo  */
@@ -47,164 +56,105 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding-top: 10px;
   }
 
   .main-menu li {
     display: flex;
     justify-content: center;
   }
+
+  /* about section */
+
+  .about p {
+    line-height: 40px;
+  }
+
   /* shop grid */
 
-  .shop-grid {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
   .mens {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
-      url(/images/mens-category.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     margin-right: 1%;
-    height: 175px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 49%
-  }
-  
-  
-  .trends {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 24%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
-      url(/images/trends-category.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 175px;
-    margin-right: 1%;
-   
-  }
-  
-  .glasses {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 25%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
-      url(/images/glasses-category.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 175px;
-  
-  }
-  
-  .sale {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 24%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
-      url(/images/sale-category.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 175px;
-    margin-top: 0;
-       }
-  
-  .bags {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 24%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
-      url(/images/bags-category.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 175px;
-    margin-right: 1%;
-    margin-top: 0;
-  }
-  
-  .womens {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
-      url(/images/womens-category.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 2.5%;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-basis: 50%;
-    height: 175px;
   }
 
-
-/* Flickity Styling */
-.carousel-cell {
-  width: 50%;
-}
-
-/* End of Flickity Styling */
-
-/* Footer */
-
-footer {
-  height: auto;
-  display: flex;
-  flex-direction: row;
+  .trends {
+    flex-basis: 24%;
+    margin-right: 1%;
   }
 
-   .footer-information {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    
-             }
+  .glasses {
+    flex-basis: 24%;
+  }
 
-   .social-media {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: center;
-   
- 
-   }
+  .sale {
+    flex-basis: 24%;
+    margin-top: -1%;
+    margin-right: 1%;
+  }
 
-.social-media ul {
-  display: flex;
-  flex-direction: column;
-   align-items: center;
+  .bags {
+    flex-basis: 25%;
+    margin-top: -1%;
+    margin-right: 1%;
+  }
+
+  .womens {
+    flex-basis: 49%;
+    margin-top: -1%;
+  }
+
+  /* Flickity Styling */
+  .carousel-cell {
+    width: 50%;
+  }
+
+  /* Updates */
+
+  .subscribe-container {
+    font-size: 0.8em;
+  }
+
+  #email-field {
+    width: 100%;
+  }
+
+  #submit-button {
+    right: 1%;
+  }
+
+  /* Footer */
+
+  footer {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 0.85em;
+  }
+
+  .footer-information {
+    text-align: left;
+    padding-left: 10px;
+    }
+
+  .social-media ul {
+    flex-direction: column;
+    align-items: center;
   }
 
   .social-media li {
     display: flex;
     flex-direction: row;
-   
-       }
+    margin: 0px 100px 0px auto;
+    padding-right: 50px;
+  }
 
-       .social-media-text {
-        
-       }
-  
-
-
-  
+  .social-media-text {
+    padding-left: 20px;
+    padding-bottom: 30px;
+    line-height: 20px;
+  }
 
   /* End of Footer */
-  
-
-
-
-
 }
