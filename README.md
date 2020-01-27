@@ -1,5 +1,15 @@
 # Aloha - Project 1 
 
-This is my Aloha project...
+## Technologies Used
 
-(e.g. technologies used, personal learnings, installation instructions, etc.
+HTML, CSS and JavaScript
+
+## Personal Learnings
+
+Learned how to create a responsive website and improved my skills in HTML, CSS and JavaScript.
+
+## Installation Instructions
+
+Download all files and click "index.html" to view on your local computer.
+
+
