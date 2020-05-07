@@ -17,16 +17,17 @@
 </head>
 
 <body>
-  <header id="myHeader">
+  <header>
   <!-- Header Images -->
     <div class="left-logo">
       <!-- The company logo-->
       <img src="images/aloha-logo.svg" />
     </div>
-      <div class="right-logo">
+    <div class="right-logo">
       <!-- The shopping card icon-->
-      <h1 id="cartCount"></h1>
       <img src="images/cart-icon.svg" />
+      <span class="red-dot"></span>
+      <span id="number">0</span>
     </div>
     <hr>
     <nav class="main-menu">
@@ -86,9 +87,10 @@
             <figure>
             <img src="images/stretch-knit-dress.jpg" />
             <p>Dresses</p>
-            <h3>Stretched Knit Dress</h3>
+            <h3 class="product-name">Stretched Knit Dress</h3>
             <p>$169.99</p>
             <input type="submit" value="Add to Cart" id="cart-button">
+            <h4 id="remove-cart">Remove from Cart</h4>
             </figure>
           </div>
         <div class="carousel-cell">
@@ -98,16 +100,18 @@
           <h3>Cotton Blue Shirt</h3>
           <p>$89.00</p>
           <input type="submit" value="Add to Cart" id="cart-button">
+          <h4 id="remove-cart">Remove from Cart</h4>
           </figure>
         </div>
         <div class="carousel-cell">
           <figure>
           <img src="images/pink-dotted-dress.jpg" />
           <p>Dresses</p>
-          <h3>Checked Stretch Dress</h3>
+          <h3 class="product-name">Checked Stretch Dress</h3>
           <p>$129.99</p>
           <input type="submit" value="Add to Cart" id="cart-button">
-          </figure>    
+          <h4 id="remove-cart">Remove from Cart</h4>  
+        </figure>    
         </div>      
         <div class="carousel-cell">
           <figure>
@@ -116,7 +120,8 @@
           <h3>Blue Hipster Backpack</h3>
           <p>$69.00</p>
           <input type="submit" value="Add to Cart" id="cart-button">
-          </figure>
+          <h4 id="remove-cart">Remove from Cart</h4>  
+        </figure>
         </div>
         <div class="carousel-cell">
           <figure>
@@ -125,7 +130,8 @@
           <h3>Pink Dotted Dress</h3>
           <p>$99.00</p>
           <input type="submit" value="Add to Cart" id="cart-button">
-          </figure>
+          <h4 id="remove-cart">Remove from Cart</h4>  
+        </figure>
         </div>
         <div class="carousel-cell">
         <figure>
@@ -134,7 +140,8 @@
           <h3>Denim Overall Shorts</h3>
           <p>$89.00</p>
           <input type="submit" value="Add to Cart" id="cart-button">
-          </figure>
+          <h4 id="remove-cart">Remove from Cart</h4>  
+        </figure>
         </div>
         <div class="carousel-cell">
           <figure>
@@ -143,7 +150,8 @@
           <h3>Blue Silk Dress</h3>
           <p>$99.00</p>
           <input type="submit" value="Add to Cart" id="cart-button">
-          </figure>
+          <h4 id="remove-cart">Remove from Cart</h4>  
+        </figure>
         </div>
         <div class="carousel-cell">
           <figure>
@@ -152,7 +160,8 @@
           <h3>Cotton Yellow T-Shirt</h3>
           <p>$25.00</p>
           <input type="submit" value="Add to Cart" id="cart-button">
-          </figure>
+          <h4 id="remove-cart">Remove from Cart</h4>  
+        </figure>
         </div>
       </div>
     </section>

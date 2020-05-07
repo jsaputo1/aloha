@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   //Flickity
 
   var elem = document.querySelector(".carousel");
   var flkty = new Flickity(elem, {
     // options
     cellAlign: "left",
-    contain: true
+    contain: true,
   });
 
   // element argument can be a selector string
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   document
     .getElementById("submit-button")
-    .addEventListener("click", function(event) {
+    .addEventListener("click", function (event) {
       event.preventDefault();
 
       let emailField = document.getElementById("email-field");
@@ -33,47 +33,42 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
   function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   }
 
   //Add to cart
 
-  let cartText = document.getElementById("cartCount");
-  let button = document.getElementById("cart-button"),
-    count = 0;
-  button.onclick = function() {
-    count++;
-    cartText.innerHTML = "Items: " + count;
-    console.log(count);
-  };
+  const btn = document.querySelectorAll("#cart-button");
+  const btn2 = document.querySelectorAll("#remove-cart");
+  const productName = document.querySelectorAll(".product-name");
 
-  // End of add to cart
+  // console.log(test2);
 
-  // Stick Header
-  window.onscroll = function() {
-    myFunction();
-  };
-
-  const header = document.getElementById("myHeader");
-
-  const sticky = header.offsetTop;
-
-  function myFunction() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
+  productName.forEach(function (index) {
+    {
+      console.log(index.innerHTML);
     }
-  }
+  });
 
-  // End of Sticky Header
+  const count = document.getElementById("number");
+  let counter = 0;
 
-  // Smooth Scrolling
+  btn.forEach(function (element, index) {
+    btn[index].addEventListener("click", function () {
+      counter++;
+      count.innerHTML = counter;
+      alert("Item added to cart");
+    });
+  });
 
-  window.scroll({
-    top: 2500,
-    left: 0,
-    behavior: "smooth"
+  btn2.forEach(function (element, index) {
+    btn2[index].addEventListener("click", function () {
+      if (counter > 0) {
+        counter--;
+        count.innerHTML = counter;
+        alert("Item removed from cart");
+      }
+    });
   });
 });
