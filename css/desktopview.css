@@ -8,6 +8,12 @@
     background-size: 100%;
   }
 
+  /* Nav */
+
+  .main-menu ul {
+    justify-content: space-around;
+  }
+
   /* Hero Banner */
 
   .hero-banner {
