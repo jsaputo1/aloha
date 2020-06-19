@@ -18,19 +18,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //Subscribe button
 
-  document
-    .getElementById("submit-button")
-    .addEventListener("click", function (event) {
-      event.preventDefault();
+  document.getElementById("submit-button").addEventListener("click", function (event) {
+    event.preventDefault();
 
-      let emailField = document.getElementById("email-field");
-      if (validateEmail(emailField.value)) {
-        alert("Thanks for subscribing!");
-        emailField.value = "";
-      } else {
-        alert("Invalid email address.");
-      }
-    });
+    let emailField = document.getElementById("email-field");
+    if (validateEmail(emailField.value)) {
+      alert("Thanks for subscribing!");
+      emailField.value = "";
+    } else {
+      alert("Invalid email address.");
+    }
+  });
 
   function validateEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -51,13 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const count = document.getElementById("number");
+  const cart = document.getElementById("cart-text");
   let counter = 0;
 
   btn.forEach(function (element, index) {
     btn[index].addEventListener("click", function () {
       counter++;
-      count.innerHTML = counter;
+      cart.innerHTML = counter;
       alert("Item added to cart");
     });
   });
