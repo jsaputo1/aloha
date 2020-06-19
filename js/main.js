@@ -41,14 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const btn2 = document.querySelectorAll("#remove-cart");
   const productName = document.querySelectorAll(".product-name");
 
-  // console.log(test2);
-
-  productName.forEach(function (index) {
-    {
-      console.log(index.innerHTML);
-    }
-  });
-
   const cart = document.getElementById("cart-text");
   let counter = 0;
 
@@ -64,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btn2[index].addEventListener("click", function () {
       if (counter > 0) {
         counter--;
-        count.innerHTML = counter;
+        cart.innerHTML = counter;
         alert("Item removed from cart");
       }
     });
