@@ -2,6 +2,7 @@
   /* Text Size Increase */
   body {
     font-size: 20px;
+    margin-top: 150px;
   }
 
   /* Hide/Unhide */
@@ -19,7 +20,7 @@
   header {
     display: flex;
     flex-wrap: nowrap;
-    padding: 5px 16px 10px 5px;
+    height: 150px;
   }
 
   /* Left logo  */
@@ -31,7 +32,7 @@
   }
 
   .left-logo img {
-    width: 70%;
+    width: 150px;
   }
 
   /* Right logo  */
