@@ -260,6 +260,7 @@ body {
   font-size: 16px;
   font-family: "Raleway Light";
   overflow-x: hidden;
+  margin-top: 120px;
 }
 
 /* Header */
@@ -268,18 +269,14 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   background-color: white;
   top: 0%;
   z-index: 1;
   width: 100%;
-  position: sticky;
-}
-
-.sticky {
   position: fixed;
-  top: 0;
-  width: 100%;
-  padding-top: 10px;
+  padding: 15px 0;
+  height: 120px;
 }
 
 /* Left logo  */
@@ -299,8 +296,7 @@ header {
 .right-logo {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
-  padding-right: 25px;
+  padding-right: 15px;
   position: relative;
 }
 
