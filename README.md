@@ -19,7 +19,7 @@ Aloha is a single page design of an online clothing store. It was designed mobil
 
 <p align="center">
 
-  <img src="https://github.com/jsaputo1/aloha/blob/master/docs/aloha-desktop-view.jpg" alt="screenshot of desktop view">
+  <img src="https://github.com/jsaputo1/aloha/blob/master/docs/aloha-deskop-view.jpg" alt="screenshot of desktop view">
 </p>
 
 ## Technologies Used
