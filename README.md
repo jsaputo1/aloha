@@ -2,6 +2,8 @@
 
 Aloha is a single page design of an online clothing store. It was designed mobile first with responsive views for Tablet and Desktop.
 
+Live Demo - https://www.johnsaputo.net/aloha/
+
 ## Mobile View
 
 <p align="center">
